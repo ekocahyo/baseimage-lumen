@@ -14,7 +14,6 @@ COPY --from=build_lumen /usr/bin/composer /usr/bin/composer
 COPY --from=build_lumen /lumen /lumen
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-
 WORKDIR /app
 VOLUME /app
 
