@@ -8,5 +8,6 @@ fi
 chown 1000:1000 /app -R;
 find /app -type f -exec chmod 664 {} \;
 find /app -type d -exec chmod 775 {} \;
+touch /app/test.txt;
 
 exec "$@"
